@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Aryan}{Gupta}{ \urlstyle{same}\href{http://https://github.com/arynn-gupta}{github.com/arynn-gupta} | \href{https://www.linkedin.com/in/aryan-gupta-83a81518b/}{linkedin.com/in/aryan-gupta}\\
+\href{mailto:arynn.gupta@gmail.com}{arynn.gupta@gmail.com} | 638.794.7783
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{PSIT}
+\descript{Bachelor of Technology}
+\location{Major : Computer Science and Engineering}
+\location{June 2018 - 2022 | Kanpur, Uttar Pradesh}
+\sectionsep
+
+\subsection{MTMHSS}
+\descript{HSC + SSC}
+\location{April 2018 |  Kanpur, Uttar Pradesh}
+\location{ SSC : 88 / 100 \\
+HSC: 86.8 / 100 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Programming for Problem Solving \\
+Data Structure \\
+Computer Organization and \\ Architecture \\
+Python Programming \\
+Operating Systems \\
+Theory of Automata and \\ Formal Languages \\
+Technical Communication
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{} Python \textbullet{} Javascript \\
+C \textbullet{} C++ \textbullet{} HTML \textbullet{} CSS \\
+Bootstrap \\ 
+\location{Over 1000 lines:}
+PHP \textbullet{} SQL \textbullet{} MongoDB \\ Express.js \textbullet{} Node.js \textbullet{} React.js \\
+\location{Familiar:}
+Android \textbullet{} Git 
+\sectionsep
+
+\subsection{Soft Skills}
+Technical Communication\\
+Teamwork \\
+Agile (Scrum)\\
+\location{Languages:}
+English \textbullet{} Hindi\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\textbullet{} Articles on overclocking \\
+and fixing common windows errors / driver issues \\
+\textbullet{} Articles on rooting Android devices, \\
+flashing new kernel/rom/firmware and much more .
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\urlstyle{same}\href{https://github.com/arynn-gupta/bullseye}{\runsubsection{A* Pathfinding Visualizer}}
+\descript{| Python}
+\location{Jul 2020 – Jul 2020 | Kanpur, Uttar Pradesh}
+\vspace{\topsep}
+\begin{tightemize}
+\item Built Python application for visualizing A* pathfinding algorithm .
+\item Used Pygame module for animation and maze generation .
+\end{tightemize}
+\sectionsep
+
+\urlstyle{same}\href{https://github.com/arynn-gupta/flappy.ai}{\runsubsection{Train AI to play Flappy Bird}}
+\descript{| Python}
+\location{Jul 2020 – Jul 2020 | Kanpur, Uttar Pradesh}
+\begin{tightemize}
+\item Used NeuroEvolution of Augmenting Topologies to train agent to play Flappy Bird game .
+\item Used Pygame module for recreating the Flappy bird game and animating the enviornment  .
+\end{tightemize}
+\sectionsep
+
+\urlstyle{same}\href{https://github.com/arynn-gupta/Penetration_Testing}{\runsubsection{Penetration Testing Toolkit}}
+\descript{| Python}
+\location{Mar 2020 – Jun 2020 | Kanpur, Uttar Pradesh}
+\begin{tightemize}
+\item Used Scapy to create a collection of Penetration Testing tools .
+\item Used a variety of python modules to create payloads for different Operating Systems .
+\end{tightemize}
+\sectionsep
+
+\urlstyle{same}\href{https://github.com/arynn-gupta/Projekt}{\runsubsection{Object / Text Recognizing Camera Application}}
+\descript{| Python}
+\location{Sept 2019 – Nov 2019 | Kanpur, Uttar Pradesh}
+\begin{tightemize}
+\item Used Tensorflow python module and (YOLO) pretrained dataset to recognize daily life objects .
+\item Used Pytesseract for Optical Character Recognition .
+\item Used pyttsx3 for text to speech functionality to aid blind people .
+\item Used kivy python module to develop the gui so that it can easily be ported to Android .
+\end{tightemize}
+\sectionsep
+
+\location{Other Projects}
+\begin{tightemize}
+\item Facematch : A clone of Mark Zuckerberg's facemash website .
+\item TicTacToe : An Android clone of the tictactoe game .
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Python Developer}
+\descript{| Freelance }
+\location{Jan 2019 - Present | Kanpur, Uttar Pradesh}
+\vspace{\topsep}
+\begin{tightemize}
+\item Modified existing software to correct coding errors, upgrade interfaces and improve overall performance .
+\item Implemented simple machine learning algorithms (Linear Regression and Support Vector Machines) to analyze and predict stock performance .
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Web Developer}
+\descript{| Freelance }
+\location{Jan 2018 - Present | Kanpur, Uttar Pradesh}
+\vspace{\topsep}
+\begin{tightemize}
+\item Designed and created UI's to implement pre-existing back-end functionality using CSS , Bootstrap , JQuery and Javascript .
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+AWS Fundamentals Specialization
+\textbullet{} Google IT Automation with Python
+\textbullet{} Data Structures and Algorithms Specialization
+\textbullet{} IT Fundamentals for Cybersecurity
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
